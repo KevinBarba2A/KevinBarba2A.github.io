@@ -1,0 +1,1574 @@
+* {
+  font-family: Manrope, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --scroll-height: 4px;
+}
+
+.slide {
+  padding: 150px 50px;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+  height: 40vh;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.titulo {
+  background: #7f8c8d;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 20px;
+  padding: 10px 0px;
+  text-align-last: center;
+  width: 200px;
+  text-decoration: none;
+}
+.salas {
+  background-color: white;
+  padding: 10px;
+}
+
+.sub-titulo {
+  background-color: white;
+  color: black;
+  padding: 50px;
+}
+
+.fondo {
+  background: white;
+  background-size: 100px 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.s1 {
+  background-image: url(sala1.webp);
+  padding: 200px;
+}
+.s2 {
+  background-image: url(sala2.jpg);
+  display: none;
+  padding: 200px;
+}
+.s3 {
+  background-image: url(sala3.jpg);
+  display: none;
+  padding: 200px;
+}
+
+.s4 {
+  background-image: url(sala4.jpg);
+  display: none;
+  padding: 200px;
+}
+
+.s5 {
+  background-image: url(sala5.jpg);
+  display: none;
+  padding: 200px;
+}
+
+.slide h1 {
+  font-size: 40pt;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 1);
+}
+.slide p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+}
+
+.iniciar-sesion,
+.contacto-boton {
+  user-select: none;
+  display: block;
+  background-color: #e451e9;
+  padding: 15px 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 0;
+  border-bottom: 5px solid #e417eb;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.entrado {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 100px;
+  right: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 30px;
+  width: 8%;
+  border-radius: 5px;
+}
+
+.entrado > p {
+  margin-top: 20px;
+}
+
+.entrado > hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.entrado > div {
+  margin-bottom: 10px;
+}
+
+.centrar-cerrar-sesion {
+  display: flex;
+  justify-content: center;
+}
+
+.centrar-cerrar-sesion > a {
+  color: rgb(216, 40, 216);
+  font-size: 14px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.centrar-cerrar-sesion > a:hover {
+  text-decoration: underline;
+}
+
+.login-aviso {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 100px;
+  right: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px 20px;
+  width: 15%;
+  border-radius: 5px;
+}
+
+.iniciar-sesion:active,
+.contacto-boton:active {
+  border-bottom-width: 0;
+  margin-bottom: 15px;
+  top: 5px;
+}
+
+.boton-1 {
+  margin-bottom: 10px;
+}
+
+.explicacion-inicio-sesion {
+  width: 100%;
+}
+
+.explicacion-inicio-sesion p {
+  word-wrap: break-word;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.no-cuenta {
+  text-align: center;
+}
+
+.no-cuenta-a {
+  color: rgb(216, 40, 216);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.no-cuenta-a:hover {
+  text-decoration: underline;
+}
+
+.explicacion-inicio-sesion h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.visitar-sala {
+  user-select: none;
+  display: block;
+  background-color: #e451e9;
+  padding: 15px 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 0;
+  border-bottom: 5px solid #e417eb;
+  position: relative;
+  cursor: pointer;
+}
+.visitar-sala:active {
+  border-bottom-width: 0;
+  top: 5px;
+}
+
+.boton {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  cursor: pointer;
+  user-select: none;
+  z-index: 3;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  background-image: url(right-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.boton:hover {
+  transition: 0.5s;
+}
+.derecha {
+  right: 20px;
+  position: absolute;
+  transform: translateX(0);
+  background-position: 15px center;
+}
+.izquierda {
+  left: 20px;
+  position: absolute;
+  transform: translateX(0) rotate(180deg);
+  background-position: 15px center;
+}
+.derecha:hover {
+  transform: translateX(10px);
+  background-position-x: 20px;
+}
+.izquierda:hover {
+  transform: translateX(-10px) rotate(180deg);
+  background-position-x: 20px;
+}
+
+.paginacion {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 50px;
+  text-align: center;
+  z-index: 3;
+}
+.paginacion li {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background-color: #e451e9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.paginacion li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+.centro-slogan {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.slogan {
+  position: fixed;
+  z-index: 8;
+}
+
+.slogan p {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav {
+  width: 100%;
+  background-color: #282424;
+  height: 120px;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+nav .menu {
+  justify-content: center;
+}
+
+.menu li > a {
+  font-size: 22px;
+  margin-top: 25px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  min-width: 150px;
+  --webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.menu li > a:hover {
+  color: rgb(216, 40, 216);
+  transition-duration: 0.2s;
+}
+
+.menu > li {
+  float: left;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  z-index: 5;
+}
+
+.menu li ul {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 20px;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu li ul li {
+  margin-top: -30px;
+}
+
+.menu li ul li ul {
+  padding-top: 15px;
+}
+
+.menu li ul li ul {
+  left: 175px;
+  top: -10px;
+  width: 80%;
+}
+
+.menu li .title-menu {
+  text-align: center;
+}
+
+.menu ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu li ul li a:hover {
+  color: rgb(216, 40, 216);
+}
+
+.menu .sub-arrow {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-top: 23px;
+  display: none;
+}
+
+.menu li ul li:hover .show {
+  display: block;
+  transform: translateX(6px);
+  transition-duration: 0.2s;
+}
+
+.menu .show {
+  transition-duration: 0.2s;
+}
+
+.menu li ul li:hover {
+  transform: translateX(20px);
+}
+
+.menu li ul li {
+  transition-duration: 0.2s;
+}
+
+.acc {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  padding: 0.8px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+}
+
+.logo {
+  width: 180px;
+  padding: 0px;
+  cursor: pointer;
+  top: -15px;
+  left: 20px;
+  position: absolute;
+}
+
+.obras-antiguas-ul li {
+  display: inline-block;
+}
+
+.obras-antiguas-ul {
+  white-space: nowrap;
+  overflow-y: hidden;
+  user-select: none;
+  padding: 0 40px;
+  position: relative;
+}
+
+.obras-futuras-ul li {
+  display: inline-block;
+}
+
+.obras-futuras-ul {
+  white-space: nowrap;
+  overflow-y: hidden;
+  user-select: none;
+  padding: 0 40px;
+  position: relative;
+}
+
+.scroller-juan-rivas {
+  margin-bottom: 200px;
+  margin-left: 200px;
+}
+
+.scroller {
+  margin-bottom: 200px;
+}
+
+.scroller2 {
+  margin-bottom: 200px;
+}
+
+.obras-antiguas-ul:hover::-webkit-scrollbar {
+  /* al poner el raton encima del scroll , se cambia el ancho del scroll */
+  --scroll-height: 15px;
+}
+
+.obras-futuras-ul:hover::-webkit-scrollbar {
+  /* al poner el raton encima del scroll , se cambia el ancho del scroll */
+  --scroll-height: 15px;
+}
+
+.obras-antiguas-ul:hover {
+  margin-bottom: -12px;
+}
+
+.obras-futuras-ul:hover {
+  margin-bottom: -12px;
+}
+
+.scroller::after {
+  content: "";
+  position: absolute;
+  height: calc(100% - var(--scroll-height));
+  width: 100px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+  z-index: 2;
+}
+
+.scroller2::after {
+  content: "";
+  position: absolute;
+  height: var(--scroll-height);
+  width: 100px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+  z-index: 2;
+}
+
+.obras-antiguas-ul::-webkit-scrollbar {
+  height: var(--scroll-height);
+}
+
+.obras-antiguas-ul::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 40, 216);
+  border-radius: 40px;
+}
+
+.obras-antiguas--ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.obras-futuras-ul::-webkit-scrollbar {
+  height: var(--scroll-height);
+}
+
+.obras-futuras-ul::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 40, 216);
+  border-radius: 40px;
+}
+
+.obras-futuras--ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.categoria-1 {
+  width: 10vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.obra1 {
+  width: 6vw;
+}
+
+.obra2 {
+  width: 12.7vw;
+}
+
+.obra3 {
+  width: 7vw;
+}
+
+.obra4 {
+  width: 17vw;
+}
+
+.obra5 {
+  width: 13vw;
+}
+
+.obra6 {
+  width: 10vw;
+}
+
+.obra7 {
+  width: 8vw;
+}
+
+.obra8 {
+  width: 18vw;
+}
+
+.obra9 {
+  width: 14vw;
+}
+
+.categoria-1:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.obra-destacada:hover {
+  transform: scale(1.05);
+  transition-duration: 0.2s;
+}
+
+.contenedor-obra-destacada {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.obra-destacada {
+  display: block;
+  width: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.salas-publicas {
+  margin-top: 100px;
+  padding: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin-bottom: 300px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+main {
+  margin-top: -50px;
+  padding-top: 100px;
+  padding: 100px 50px 50px 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin-bottom: 300px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.main-inicio {
+  margin-top: -50px;
+  padding-top: 100px;
+  padding: 100px 50px 50px 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin-bottom: 300px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.obras-relacionadas-juan-rivas {
+  margin-top: -300px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 300px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding-right: 300px;
+}
+
+.obras-relacionadas-juan-rivas h2 {
+  margin-left: 200px;
+}
+
+.footer-entero {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282424;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.footer-izquierda {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.footer-izquierda ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-izquierda ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-footer {
+  width: 16vw;
+}
+
+.a-footer:hover {
+  color: #e417eb;
+}
+
+.footer-derecha p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.iconos-redes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  max-width: 100%;
+}
+
+.slide-terminos-y-condiciones {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  position: relative;
+  z-index: 5;
+  background: white;
+  width: 100%;
+}
+
+.footer-end {
+  position: fixed;
+}
+
+.footer-end p {
+  color: white;
+  position: fixed;
+  z-index: 8;
+  bottom: 0;
+}
+
+.calendario {
+  left: 20px;
+}
+
+.horario {
+  right: 40%;
+  left: 40%;
+}
+
+.copy {
+  right: 0;
+}
+
+.contactar-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 250px;
+  background-color: white;
+  padding-bottom: 100px;
+  z-index: 2;
+}
+
+.fieldset-contacto {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  padding: 20px;
+}
+
+.coment-contacto {
+  max-width: fit-content;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  resize: none;
+  border-bottom: 2px rgb(190, 190, 190) solid;
+}
+
+.input-contacto:focus {
+  outline: none;
+}
+
+.coment-contacto:focus {
+  outline: none;
+}
+
+.input-contacto {
+  height: 40px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px rgb(190, 190, 190) solid;
+}
+
+.div-2-contacto {
+  margin-top: 30px;
+}
+
+.div-3-contacto {
+  margin-top: 30px;
+}
+
+.div-5-contacto {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacto-boton {
+  right: 50%;
+  left: 25%;
+  width: 50%;
+}
+
+.input-contacto:focus {
+  border-bottom: 2px #e417eb solid;
+}
+
+.coment-contacto:focus {
+  border-bottom: 2px #e417eb solid;
+}
+
+.fieldset-contacto > div > p {
+  margin-bottom: 10px;
+}
+
+.terms {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.terminos-condiciones {
+  color: rgb(216, 40, 216);
+  text-decoration: none;
+}
+
+.terminos-condiciones:hover {
+  color: rgb(255, 139, 255);
+}
+
+.producto-contenedor {
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  width: 1400px;
+  max-width: 1400px;
+}
+
+.producto-fondo {
+  padding: 40px;
+  margin-bottom: 700px;
+  background-color: white;
+  position: relative;
+  z-index: 6;
+}
+
+/* .producto-contenedor1 {
+  display: block;
+  position: absolute;
+} */
+
+.producto-izquierda {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.contact-number {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  line-height: 150%;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.linea-separacion {
+  margin-top: 30px;
+}
+
+.contacto-producto {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-contacto {
+  margin-top: 20px;
+  background-color: #000;
+  border-style: none;
+  color: white;
+  padding: 10px;
+  width: 10vw;
+  cursor: pointer;
+}
+
+.boton-contacto:hover {
+  text-decoration: underline;
+}
+
+.product-img {
+  width: 35vw;
+}
+
+.contact-number:hover {
+  color: purple;
+}
+
+.producto-derecha {
+  width: 20vw;
+  margin-top: 60px;
+  margin-left: 200px;
+  padding-top: 100px;
+  background-color: rgb(244, 244, 244);
+  padding: 50px;
+}
+
+.producto-fecha {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.producto-titulo span {
+  font-size: 16px;
+}
+
+.producto-autor h3 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.h3-producto h3 {
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.rectangle-callout {
+  position: relative;
+  background: white;
+  height: 50px;
+  width: 75px;
+  margin-top: 20px;
+}
+.rectangle-callout-display {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-sala {
+  background-image: url(sala1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 200px;
+  text-align-last: center;
+  position: relative;
+  z-index: 5;
+  background-color: white;
+}
+
+.slide-sala h1 {
+  font-size: 40pt;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 15px rgb(0 0 0 / 50%), 0 0 30px rgb(0 0 0);
+  margin-bottom: 20px;
+}
+.subtitulo-sala {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 20px;
+}
+.slide-sala-h3 {
+  margin-bottom: 20px;
+}
+
+.descripcion-sala {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.descripcion-sala > * {
+  margin-top: 20px;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+  transition-duration: 0.2s;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+/* Crea cuatro columnas iguales que se ponen una al lado de la otra */
+.column {
+  flex: 75%;
+  max-width: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  cursor: pointer;
+}
+
+.terms-text:hover {
+  color: black;
+}
+
+.registro-form {
+  position: relative;
+  margin-bottom: 400px;
+  background-color: white;
+  padding: 50px;
+  z-index: 2;
+}
+
+.form-register {
+  width: 400px;
+  background: black;
+  padding: 30px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register p {
+  text-align: center;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.desplegable {
+  border: 1px solid #1f53c5;
+  font-size: 18px;
+  height: 30px;
+  padding: 1px;
+  width: 100px;
+  font-family: "calibri";
+  background-color: #24303c;
+  color: aliceblue;
+}
+.coment {
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  background-color: #24303c;
+  color: aliceblue;
+  max-width: fit-content;
+}
+
+.controls {
+  width: 95%;
+  background: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-register .cuenta {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register .cuenta {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register .cuenta:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.solo-artistas {
+  margin-bottom: 10px;
+}
+
+.no-cuenta-aviso {
+  color: rgb(216, 40, 216);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.no-cuenta-aviso:hover {
+  text-decoration: underline;
+}
+
+.form-login .cuenta {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-login .cuenta {
+  color: white;
+  text-decoration: none;
+}
+
+.form-login .cuenta:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-login .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-login p {
+  text-align: center;
+}
+
+.form-login h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-login {
+  width: 400px;
+  background: black;
+  padding: 30px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.login-form {
+  position: relative;
+  margin-bottom: 400px;
+  background-color: white;
+  padding: 50px;
+  z-index: 2;
+}
+
+.contenedor-artistas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 50px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 310px;
+  user-select: none;
+}
+
+.contenedor-artista {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+  width: 500px;
+  height: 432px;
+  margin: 50px;
+  margin-top: 150px;
+}
+
+.header-artista {
+  display: flex;
+  flex-direction: column;
+  margin-top: -100px;
+  padding: 20px;
+}
+
+.header-artista h3 {
+  cursor: pointer;
+  user-select: none;
+  margin-left: 100px;
+}
+
+.header-artista > p {
+  user-select: none;
+  margin-left: 100px;
+}
+
+.header-artista .etiqueta-pintor {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 35px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 100px;
+}
+
+.header-artista .etiqueta-pintor:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.header-artista img {
+  position: relative;
+  top: 85px;
+  left: -15px;
+  border: 1px white solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.body-artista {
+  margin-top: 20px;
+  height: 300px;
+}
+
+.body-artista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.header-artista > h3 > a,
+.a-artista {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-artista > h3 > a:hover,
+.a-artista:hover {
+  color: #e451e9;
+}
+
+.etiquetas-en-linea {
+  display: flex;
+}
+
+.etiqueta-pintor {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 35px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 100px;
+}
+
+.etiqueta-pintora {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 41px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 100px;
+}
+
+.etiqueta-escultor {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 48px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.etiqueta-escultora {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 54px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.etiqueta-fotografo {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 56px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.etiqueta-fotografa {
+  user-select: none;
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+  width: 56px;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.etiqueta-pintor:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.etiqueta-escultor:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.etiqueta-fotografo:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.etiqueta-pintora:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.etiqueta-escultora:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.etiqueta-fotografa:hover {
+  background-color: #e417eb;
+  transition-duration: 0.3s;
+}
+
+.flex-juan-rivas-contenedor {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 300px;
+  padding-bottom: 50px;
+}
+
+.juan-rivas-contenedor {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  margin-top: 150px;
+  display: flex;
+  border: 3px #e451e9 solid;
+  zoom: 130%;
+}
+
+.juan-rivas-contenedor img {
+  position: relative;
+  top: -50px;
+  left: 40%;
+  border: 1px white solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.juan-rivas-izquierda {
+  margin-top: 100px;
+  width: 100%;
+  margin-left: -110px;
+  display: block;
+}
+
+.juan-rivas-izquierda h3 {
+  margin-left: 50px;
+}
+
+.juan-rivas-izquierda > pre {
+  margin-top: 10px;
+}
+
+.juan-rivas-izquierda:after {
+  content: "";
+  background-color: grey;
+  position: absolute;
+  width: 2px;
+  height: 300px;
+  top: 250px;
+  left: 50%;
+  display: block;
+}
+
+.nombre-artista {
+  position: relative;
+  left: 25%;
+  top: 10%;
+}
+
+.juan-rivas-derecha {
+  width: 100%;
+}
+
+.juan-rivas-derecha {
+  margin-top: 100px;
+  width: 100%;
+  margin-left: 80px;
+  display: block;
+}
+
+.terminos1 > p {
+  margin-bottom: 10px;
+}
+
+.juan-rivas-derecha p {
+  margin-top: 10px;
+  margin-left: -40px;
+  width: 110%;
+  word-spacing: 1px;
+}
+
+.obras-relacionadas-juan-rivas .obra2 {
+  width: 5vw;
+}
+
+.obras-relacionadas-juan-rivas .obra3 {
+  width: 11.6vw;
+}
+
+.obras-relacionadas-juan-rivas .obra4 {
+  width: 10vw;
+}
+
+.obras-relacionadas-juan-rivas .obra5 {
+  width: 10vw;
+}
+
+.obras-relacionadas-juan-rivas .obra6 {
+  width: 8.4vw;
+}
+
+.obras-relacionadas-juan-rivas .obra7 {
+  width: 11.4vw;
+}
+
+.obras-relacionadas-juan-rivas .obra8 {
+  width: 5.1vw;
+}
+
+.obras-relacionadas-juan-rivas .obra9 {
+  width: 5.1vw;
+}
+
+.obras-relacionadas-juan-rivas .obra10 {
+  width: 3vw;
+  margin-bottom: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.visitar-sala-juan-rivas {
+  height: 100px;
+  margin-top: -100px;
+  background-color: transparent;
+  padding: 20px;
+  position: relative;
+  top: -70px;
+}
+
+.obras-futuras-ul .obra1 {
+  width: 19vw;
+}
+
+.obras-futuras-ul .obra2 {
+  width: 17.7vw;
+}
+
+.obras-futuras-ul .obra3 {
+  width: 12.4vw;
+}
+
+.obras-futuras-ul .obra4 {
+  width: 7.4vw;
+}
+
+.obras-futuras-ul .obra5 {
+  width: 13.6vw;
+}
+
+.obras-futuras-ul .obra6 {
+  width: 13.2vw;
+}
+
+.obras-futuras-ul .obra7 {
+  width: 8vw;
+}
+
+.obras-futuras-ul .obra8 {
+  width: 14vw;
+}
+
+.obras-futuras-ul .obra9 {
+  width: 14vw;
+}
+
+.asterisco-required {
+  padding-left: 5px;
+  color: red;
+}

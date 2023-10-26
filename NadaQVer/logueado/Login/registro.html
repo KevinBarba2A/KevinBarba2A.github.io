@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../Inicio/inicio.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <div class="centro-slogan">
+        <div class="slogan">
+          <p>Cultuart where the artists are the true art</p>
+        </div>
+      </div>
+      <nav id="nav">
+        <ul class="menu">
+          <li>
+            <a class="a-logo" href="../inicio/Inicio.html">
+              <img class="logo" src="../Inicio/cultuart.PNG" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="title-menu" href="">Obras</a>
+            <ul>
+              <li>
+                <img
+                  class="sub-arrow show"
+                  src="../Inicio/arrow-right.png"
+                  alt=""
+                /><a href="../Pinturas/pinturas.html" target="_blank"
+                  >Pintura</a
+                >
+              </li>
+              <li>
+                <img
+                  class="sub-arrow show"
+                  src="../Inicio/arrow-right.png"
+                  alt=""
+                /><a href="../Esculturas/Esculturas.html" target="_blank"
+                  >Escultura</a
+                >
+              </li>
+              <li>
+                <img
+                  class="sub-arrow show"
+                  src="../Inicio/arrow-right.png"
+                  alt=""
+                /><a href="../fotografias/Fotografias.html" target="_blank"
+                  >Fotografia</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="title-menu" href="">Salas</a>
+            <ul>
+              <li>
+                <img
+                  class="sub-arrow show"
+                  src="../Inicio/arrow-right.png"
+                  alt=""
+                /><a href="#">Salas públicas</a>
+                <ul>
+                  <li>
+                    <img
+                      class="sub-arrow show"
+                      src="../Inicio/arrow-right.png"
+                      alt=""
+                    /><a href="../Sala 3/sala3.html" target="_blank">Sala 3</a>
+                  </li>
+                  <li>
+                    <img
+                      class="sub-arrow show"
+                      src="../Inicio/arrow-right.png"
+                      alt=""
+                    /><a href="../Sala 4/sala4.html" target="_blank">Sala 4</a>
+                  </li>
+                  <li>
+                    <img
+                      class="sub-arrow show"
+                      src="../Inicio/arrow-right.png"
+                      alt=""
+                    /><a href="../Sala 5/sala5.html" target="_blank">Sala 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  class="sub-arrow show"
+                  src="../Inicio/arrow-right.png"
+                  alt=""
+                /><a href="../Sala 4/sala4.html" target="_blank"
+                  >Salas artistas</a
+                >
+                <ul>
+                  <li>
+                    <img
+                      class="sub-arrow show"
+                      src="../Inicio/arrow-right.png"
+                      alt=""
+                    /><a href="../Sala 1/sala1.html" target="_blank">Sala 1</a>
+                  </li>
+                  <li>
+                    <img
+                      class="sub-arrow show"
+                      src="../Inicio/arrow-right.png"
+                      alt=""
+                    /><a href="../Sala 2/sala2.html" target="_blank">Sala 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="title-menu"
+              href="../Artistas/artista.html"
+              target="_blank"
+              >Artistas</a
+            >
+          </li>
+          <li>
+            <a>
+              <img
+                id="img-boton-login"
+                class="acc"
+                src="../Artistas/artista3.png"
+                width="60px"
+                height="60px"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+
+        <div class="entrado" id="login-aviso-id">
+          <p>Hola, Juan Rivas</p>
+          <p>Pintor</p>
+          <p>Desnudos</p>
+          <hr class="separador-rivas" />
+          <div class="centrar-cerrar-sesion">
+            <a href="../../Inicio/Inicio.html">Cerrar sesión</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form onSubmit = "return checkRegistro(this)" class="registro-form" id="registro-form" enctype="multipart/form-data">
+    <section class="form-register">
+      <h4>Registro</h4>
+      <p class="solo-artistas">(solo para artistas)</p>
+      <input
+        class="controls"
+        type="text"
+        name="nombreyapellidos"
+        id="nombres"
+        placeholder="Ingrese su Nombre y Apellido" 
+      />
+      <input
+        class="controls"
+        type="text"
+        name="artistico"
+        id="nombre-artistico"
+        placeholder="Ingrese su nombre artístico"
+      />
+      <input
+        class="controls"
+        type="password"
+        id="contra-register"
+        name = password1
+        placeholder="Ingrese su Contraseña" 
+      />
+      <input
+        class="controls"
+        type="password"
+        name = password2
+        id="contra-register2"
+        placeholder="Repetir contraseña" 
+      />
+
+      <select class="desplegable">
+        <option>Pintor</option>
+        <option>Escultor</option>
+        <option>Fotógrafo</option>
+      </select>
+      <br /><br />
+
+      <textarea
+        class="coment"
+        cols="40"
+        rows="7"
+        align="right"
+        placeholder="Pequeña biografia"
+      ></textarea>
+      <br />
+      
+      <input 
+      class="terms"
+      type="checkbox" 
+      name="terms" 
+      id="terms-id"
+      >  Acepto los <a class="terminos-condiciones" href="../Terminos y condiciones/Terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>
+      <input class="botons" type="submit" value="Registrar" />
+      <p><a class="cuenta" href="login.html" target="_self">¿Ya tengo Cuenta?</a></p>
+    </form>
+    </section>
+
+    <footer>
+      <div class="footer-entero">
+        <div class="footer-izquierda">
+          <a href="../Inicio/Inicio.html"
+            ><img class="logo-footer" src="../Inicio/cultuart.PNG" alt=""
+          /></a>
+          <ul>
+            <li>
+              <a class="a-footer" href="#" target="_blank">Aviso legal</a>
+            </li>
+            <li>
+              <a
+                class="a-footer"
+                href="../Terminos y condiciones/Terminos-y-condiciones.html"
+                target="_blank"
+                >Términos y Condiciones</a
+              >
+            </li>
+            <li><a class="a-footer" href="#">Política de privacidad</a></li>
+            <li>
+              <a
+                class="a-footer"
+                href="../Contacto/contacto.html"
+                target="_blank"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-centro">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.343744152798!2d2.2441506157284006!3d41.45345929985891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb0c667308b9%3A0x3af4ba855e4d708d!2sColegio%20Cultural!5e0!3m2!1ses!2ses!4v1651919996748!5m2!1ses!2ses"
+            width="500"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer-derecha">
+          <p>Siguenos en</p>
+          <ul class="iconos-redes">
+            <li>
+              <a
+                href="https://www.instagram.com/cultuart.oficial/"
+                target="_blank"
+                ><img class="redes" src="../Inicio/insta.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC0nSIdYbVlZIns0-T5MOoqg"
+                target="_blank"
+                ><img class="redes" src="../Inicio/yt.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cultuart65" target="_blank"
+                ><img class="redes" src="../Inicio/twitter.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-end">
+        <p class="calendario">Lunes - Viernes</p>
+        <p class="horario">9:00 a.m. - 18:00 p.m.</p>
+        <p class="copy">
+          &copy; COPYRIGHT 2022 CULTUART. Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+    <script src="../inicio/javascript.js"></script>
+  </body>
+</html>
