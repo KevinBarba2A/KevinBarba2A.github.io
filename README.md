@@ -1,2 +1,2 @@
 ## Hola, mi nombre es Kevin 
-### Y Soy un estudiante de la escuela CEV [<img src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pngtree.com%2Ffreepng%2Fgeek-emoji-in-3d_5877669.html&psig=AOvVaw3PNvtnZUxActHj0MEwRjro&ust=1698416893014000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIjxg5D2k4IDFQAAAAAdAAAAABAI" width = 10px]
+### Y Soy un estudiante de la escuela CEV [<img src="https://png.pngtree.com/png-vector/20210120/ourlarge/pngtree-geek-emoji-in-3d-png-image_2771058.png" width=48>]()
