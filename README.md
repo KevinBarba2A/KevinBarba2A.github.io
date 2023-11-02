@@ -64,7 +64,6 @@
                     font-family: sans-serif;
                 }
             </style>
-
             <div class="tags">
                 <div class="tag">Angular</div>
                 <div class="tag">Vue(X)</div>
