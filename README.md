@@ -29,11 +29,21 @@
       <li>UnrealEngine / Blueprints <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/2560px-Unity_Technologies_logo.svg.png" width = "40"></li>
       </ul>
     </div>
+    <div class = "skills">
+      <h2>Skills</h2>
+         <ul>
+           <li><p>Diamante 3 en el Rocket league</p></li>
+           <li><p>Plastico 4 en la grieta del invocador</p></li>
+          <li><p>Aluminio 1 en Valorant</p></li>
+          <li><p>Challenger en fumar porros</p></li>
+         </ul>
+    </div>
     <div class = "redes-sociales">
       <h2>Redes Sociales</h2>
         <ul>
           <li><a href="www.twitter.com"><img src = "https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" width = "20">Twitter Kevin</a></li>
-          <li><a href="www.instagram.com"><img src = https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png width = "20">Instagram Kevin</a></li>
+          <li><a href="www.instagram.com"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png" width = "20">Instagram Kevin</a></li>
+         <li><a href="https://www.artstation.com/kevinbarbaperezb-ts3dv1ma22238"><img src = "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Artstation_logo_logos-512.png" width = "20">Artstation Kevin</a></li>
         </ul>
     </div>
 
