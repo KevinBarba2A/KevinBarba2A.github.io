@@ -23,9 +23,6 @@
 
 <br>
 <div class = "main">
-     <style>
-        .li {text-decoration: none;}
-      </style>
     <div class = "motores">
       <ul>
       <li>Unity / CSharp <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/1254px-Unreal_Engine_Logo.svg.png" width = "40"></li>
@@ -39,5 +36,5 @@
           <li><a href="www.instagram.com"><img src = https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png width = "20">Instagram Kevin</a></li>
         </ul>
     </div>
-    
+
 </div>
