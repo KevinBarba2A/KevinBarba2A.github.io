@@ -22,17 +22,21 @@
 ## Estos son algunos programas que estoy aprendiendo
 
 <br>
-<html>
-<body>
-<ul>
- <li>Unity / CSharp <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/1254px-Unreal_Engine_Logo.svg.png" width = "40"></li>
- <li>UnrealEngine / Blueprints <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/2560px-Unity_Technologies_logo.svg.png" width = "40"></li>
-</ul>
-
- <h2>Redes Sociales</h2>
-<ul>
-  <li><a href=“www.twitter.com“><img src = "https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" width = "20">Twitter Kevin</a></li>
- <li><a href=“www.instagram.com“><img src = https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png width = "20">Instagram Kevin</a></li>
-</ul>
-</body>
-</html>
+<div class = "main">
+     <style>
+        .li {text-decoration: none;}
+      </style>
+    <div class = "motores">
+      <ul>
+      <li>Unity / CSharp <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/1254px-Unreal_Engine_Logo.svg.png" width = "40"></li>
+      <li>UnrealEngine / Blueprints <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/2560px-Unity_Technologies_logo.svg.png" width = "40"></li>
+      </ul>
+    </div>
+    <div class = "redes-sociales">
+      <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="www.twitter.com"><img src = "https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" width = "20">Twitter Kevin</a></li>
+          <li><a href="www.instagram.com"><img src = https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png width = "20">Instagram Kevin</a></li>
+        </ul>
+    </div>
+</div>
