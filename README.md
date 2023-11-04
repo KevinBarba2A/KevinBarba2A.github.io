@@ -48,3 +48,47 @@
     </div>
 
 </div>
+
+## Algunos de mis trabajos
+
+<table style="width:100%">
+  <tr>
+  <td>
+	<a href="https://www.artstation.com/artwork/39BB2g">
+  		<img src="https://cdnb.artstation.com/p/assets/images/images/066/539/871/large/kevin-barba-perez-b-ts3dv1ma2223-thumnail.jpg?1693164417">
+	</a>
+	</td>
+  <td>
+	<a href="https://www.artstation.com/artwork/KeJJAx">
+  		<img src="https://cdna.artstation.com/p/assets/images/images/066/541/184/large/kevin-barba-perez-b-ts3dv1ma2223-thumnail.jpg?1693167570">
+	</a>
+	</td>
+  </tr>
+  <tr>
+  <td>
+	<a href="https://pokemonmasters-game.com/">
+  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/pokemonmasters.png">
+	</a>
+	</td>
+	<td>
+	<a href="https://disneymirrorverse.com/">
+  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/mirrorverse.png">
+	</a>
+	</td>
+	</td>
+    </tr>
+    <tr>
+    <td>
+	<a href="https://www.devourgame.com/">
+  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/devour.png">
+	</a>
+	</td>
+	<td>
+	<a href="https://kineticgames.co.uk/">
+  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/phasmophobia.png">
+	</a>
+  </tr>
+</table>
+
+
+
