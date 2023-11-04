@@ -66,28 +66,17 @@
   </tr>
   <tr>
   <td>
-	<a href="https://pokemonmasters-game.com/">
-  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/pokemonmasters.png">
+	<a href="#">
+  		<img src="https://raw.githubusercontent.com/KevinBarba2A/KevinBarba2A.github.io/Source/1A_KevinBarba_RenderDiorama_GIF">
 	</a>
 	</td>
 	<td>
-	<a href="https://disneymirrorverse.com/">
+	<a href="#">
   		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/mirrorverse.png">
 	</a>
 	</td>
 	</td>
     </tr>
-    <tr>
-    <td>
-	<a href="https://www.devourgame.com/">
-  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/devour.png">
-	</a>
-	</td>
-	<td>
-	<a href="https://kineticgames.co.uk/">
-  		<img src="https://raw.githubusercontent.com/danigomezcev/danigomezcev/main/games/phasmophobia.png">
-	</a>
-  </tr>
 </table>
 
 
