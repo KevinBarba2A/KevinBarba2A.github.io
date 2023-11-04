@@ -67,12 +67,12 @@
   <tr>
   <td>
 	<a href="#">
-  		<img src="https://raw.githubusercontent.com/KevinBarba2A/KevinBarba2A.github.io/main/Source/1A_KevinBarba_RenderDiorama_GIF">
+  		<img src="https://github.com/KevinBarba2A/KevinBarba2A.github.io/blob/main/Source/1A_KevinBarba_Final_003.png">
 	</a>
 	</td>
 	<td>
 	<a href="#">
-  		<img src="https://raw.githubusercontent.com/KevinBarba2A/KevinBarba2A.github.io/main/Source/1A_KevinBarba_Final_003">
+  		<img src="https://raw.githubusercontent.com/KevinBarba2A/KevinBarba2A.github.io/main/Source/1A_KevinBarba_RenderDiorama_GIF.jpg">
 	</a>
 	</td>
 	</td>
