@@ -1,5 +1,5 @@
 ## Hola, mi nombre es Kevin 
-### Y soy un estudiante de la escuela CEV 
+### Y soy un estudiante de la escuela CEV, actualmente estoy cursando el 2º año del superior. Soy un programador con muchas ganas de aprender :) 
 <html>
 <body>
 <br>
